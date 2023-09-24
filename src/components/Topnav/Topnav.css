@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.navbar{
+    width: 1200px;
+    height: 70px;
+    background-color: #7fffd4;
+    margin: auto;
+    display: flex;
+}
+.navbar-menu{
+    width: 100px;
+    display: flex;
+    position: relative;
+}
+.menu-list{
+    background-color: lightblue;
+}
+.menuList-item{
+    background-color: lightblue;
+    color: darkslateblue;
+    width: 400px;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    padding-left: 0;
+    z-index: 9;
+}
+.menuList-item .items{
+    padding-left: 50px;
+}
+.menuList-item li:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    color: darkslateblue;
+}
+.navbar-item{
+    background-color: lightblue;
+    color: darkslateblue;
+    width: 300px;
+    display: flex;
+    font-weight: bold;
+}
+.navbar-item ul{
+    display: flex;
+    align-items: center;
+}
+.navbar-item li{ 
+    margin: 0 5px;
+}
+.navbar-CompanyName{
+    background-color: lightblue;
+    width: 600px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+.navbar-info{
+    background-color: blanchedalmond;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-info ul{
+    display: flex;
+    align-items: center;
+    margin-right: -10px;
+}
+.navbar-info li{
+    margin-right: 10px;
+    color: darkslateblue;
+    font-weight: bold;
+}
+.navbar-info li a{
+    text-decoration: none;
+}
+.navbar-info li:nth-child(2){
+    margin-right: 30px;
+    background-color: #7fffd4 ;
+    padding: 10px;
+    border-radius: 20px;
+}
