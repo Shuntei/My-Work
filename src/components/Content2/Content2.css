@@ -102,9 +102,4 @@
     font-weight: bold;
     text-align: center;
     background-color: aquamarine;
-    /* opacity: 0;    
-    transition: opacity 2s; */
-}
-.winning-message.show {
-    /* opacity: 1; */
 }

@@ -17,7 +17,7 @@ const Content2 = () => {
     }
     return(     
         <>      
-            {winningMessage && <div className={`winning-message ${hasClicked ? 'show':''}`}>{winningMessage}</div>}
+            {winningMessage && <div className="winning-message">{winningMessage}</div>}
             <div className="wrap">            
 
                 <div className="item" onClick={handleTryLuck}>
