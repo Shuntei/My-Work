@@ -40,7 +40,7 @@
     padding: 20px;
     text-align: center;
     transform: translateY(0px);
-    transition: 2s;
+    transition: .8s;
     border-radius: 0 0 50px 50px;
     box-sizing: border-box;
 }
@@ -56,16 +56,16 @@
     height: 0;
     width: 0;
     transform: translateY(-100%);
-    transition: 2s;
+    transition: .8s;
 }
 .item .txt h1{
     border-bottom: 2px solid #000;
     padding-bottom: .3rem;
     margin-bottom: .4rem;
-    transition: 5s;
+    transition: 1.5s;
 }
 .item .txt p{
-    transition: 5s;
+    transition: 1.5s;
 }
 .item:hover{
     transform: translateY(-50px);

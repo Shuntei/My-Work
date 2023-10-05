@@ -1,0 +1,30 @@
+.bg{
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    height: 100vh;
+}
+.cart{
+    background-color: #fff;
+    border-radius: 50px;
+    width: 50vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 250px;
+}
+.cartItem{
+    display: flex;
+    padding: 5px 0;
+}
+
+.deleteButton{
+    margin-left: 10px;
+}

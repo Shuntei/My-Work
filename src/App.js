@@ -5,6 +5,7 @@ import Content from './components/Content/Content';
 import Slider from './components/Slider/Slider';
 import Content2 from './components/Content2/Content2';
 import Footer from './components/Footer/Footer';
+import Cart from './components/Cart/Cart'
 
 function App() {
   return (        
@@ -19,6 +20,7 @@ function App() {
                 <Footer />
               </>
             } />   
+            <Route path="/cart" element={<Cart />}/>
             <Route path="/content2" element={<Content2 />} />
         </Routes>
       </div>

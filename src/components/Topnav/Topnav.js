@@ -23,7 +23,8 @@ const Sidebar = () => {
             <div>
                 <ul className="items">
                     {menuList.map((items) => 
-                        <li key={items}>{items}</li>
+                        <li key={items}>
+                            <Link to="/cart">{items}</Link></li>
                     )}
                 </ul>
             </div>
@@ -59,7 +60,7 @@ const Topnav = () => {
         <div className="navbar-item">
             <ul>
                 {itemList.map((items) => 
-                    <li key={items}>{items}</li>
+                    <li style={{cursor:"pointer"}} key={items}>{items}</li>
                 )}
             </ul>
         </div>
@@ -71,7 +72,9 @@ const Topnav = () => {
                     <li key={items}>
                         <Link to="/content2">{items}</Link>
                     </li> : 
-                    <li key={items}>{items}</li>
+                    <li key={items} 
+                    style={{cursor:"pointer"}} 
+                    onClick={()=>alert("系統維護中，造成不便，敬請見諒。")}>{items}</li>
                 )}
             </ul>
         </div>
