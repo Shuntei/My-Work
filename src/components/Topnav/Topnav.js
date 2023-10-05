@@ -50,9 +50,9 @@ const Topnav = () => {
         <div className="navbar-menu">
             <div className="menu-list">
                 <button onClick={() => setMenuSpread(!menuSpread)} style={{backgroundColor:"lightblue",border:"none",cursor:"pointer", height:"100%", width:"100px"}}>
-                    <div style={{margin:"auto", width:"80px", height:"10px", marginBottom: "10px", backgroundColor:"#fff"}}></div>
-                    <div style={{margin:"auto", width:"80px", height:"10px", marginBottom: "10px",backgroundColor:"#fff"}}></div>
-                    <div style={{margin:"auto", width:"80px", height:"10px",backgroundColor:"#fff"}}></div>
+                    <div style={{margin:"auto", width:"60px", height:"10px", marginBottom: "8px", backgroundColor:"#fff"}}></div>
+                    <div style={{margin:"auto", width:"60px", height:"10px", marginBottom: "8px",backgroundColor:"#fff"}}></div>
+                    <div style={{margin:"auto", width:"60px", height:"10px",backgroundColor:"#fff"}}></div>
                 </button>
             </div>
             <div>{menuSpread ? <Sidebar /> : null}</div>
