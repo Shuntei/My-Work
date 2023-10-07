@@ -18,6 +18,13 @@
 .menu-list{
     background-color: lightblue;
 }
+.button{
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+    height: 100%; 
+    width: 100px;
+}
 .menuList-item{
     background-color: lightblue;
     color: darkslateblue;
@@ -53,7 +60,15 @@
     align-items: center;
 }
 .navbar-item li{ 
+    padding: 3px 5px;
     margin: 0 5px;
+}
+.navbar-item li:hover{ 
+    background-color: darkslateblue;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 5px;
 }
 .navbar-CompanyName{
     background-color: lightblue;
@@ -80,10 +95,22 @@
 }
 .navbar-info li a{
     text-decoration: none;
+    padding: 3px 5px;
+}
+.navbar-info li a:hover{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 3px 5px;
+    background-color: rgb(216, 81, 54);
+    color: #fff;
 }
 .navbar-info li:nth-child(2){
     margin-right: 30px;
     background-color: #7fffd4 ;
     padding: 10px;
     border-radius: 20px;
+}
+.navbar-info li:nth-child(2):hover{
+    background-color: rgb(216, 81, 54);
+    color: #fff;
 }

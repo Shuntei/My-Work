@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Topnav.css'
+import './Topnav.css';
 // import ClickSidebar from '../ClickSideBar/ClickSidebar';
 
 const Sidebar = () => {
@@ -34,10 +34,11 @@ const Sidebar = () => {
 const Topnav = () => {
 
     const [ menuSpread, setMenuSpread ] = useState(false);
+
     const itemList = [
         "專欄故事",
         "合作邀約",
-        "企業永續",
+        "企業永續"
     ];
 
     const infoList = [
@@ -49,7 +50,7 @@ const Topnav = () => {
     <div className="navbar">
         <div className="navbar-menu">
             <div className="menu-list">
-                <button onClick={() => setMenuSpread(!menuSpread)} style={{backgroundColor:"lightblue",border:"none",cursor:"pointer", height:"100%", width:"100px"}}>
+                <button className="button" onClick={() => setMenuSpread(!menuSpread)}>
                     <div style={{margin:"auto", width:"60px", height:"10px", marginBottom: "8px", backgroundColor:"#fff"}}></div>
                     <div style={{margin:"auto", width:"60px", height:"10px", marginBottom: "8px",backgroundColor:"#fff"}}></div>
                     <div style={{margin:"auto", width:"60px", height:"10px",backgroundColor:"#fff"}}></div>

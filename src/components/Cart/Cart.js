@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { v4 } from 'uuid'
+import { v4 } from 'uuid';
 import './Cart.css';
 
 const Cart = () => {
