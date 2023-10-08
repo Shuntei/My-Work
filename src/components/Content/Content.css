@@ -7,7 +7,6 @@
     flex-direction: column;
     padding-bottom: 50px;
 }
-
 .someText{
     text-align:center;
     padding: 200px 0;
@@ -37,13 +36,11 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
-
 .contents{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .items2{
     height: 422.4px;
     width: 780px;

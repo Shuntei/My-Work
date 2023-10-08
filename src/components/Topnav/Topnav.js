@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Topnav.css';
-// import ClickSidebar from '../ClickSideBar/ClickSidebar';
 
 const Sidebar = () => {
     const menuList = [

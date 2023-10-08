@@ -1,46 +1,3 @@
-// import react from "react"; 
-// import { Swiper, SwiperSlide } from 'swiper/react'; 
-// import './Slider.css'; 
-
-// import {Pagination,Navigation,Scrollbar} from "swiper";
-
-// import 'swiper/css/pagination'; 
-// import 'swiper/css/navigation';
-// import 'swiper/css/scrollbar';
-
-// const Slider = () => { 
-//     const img = [
-//         {url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyCq6PGDTHZS7ycv71p-JMFPf-ZoC26kdPw&usqp=CAU'},
-//         {url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyCq6PGDTHZS7ycv71p-JMFPf-ZoC26kdPw&usqp=CAU'},
-//         {url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyCq6PGDTHZS7ycv71p-JMFPf-ZoC26kdPw&usqp=CAU'}
-//     ]
-//     return ( 
-//         <Swiper
-//             modules={[Pagination,Navigation,Scrollbar]}  // 引入module 
-//             spaceBetween={50} //Slide之間的距離 
-//             slidesPerView={1}  //一頁顯示幾個slide 
-//             navigation //左右箭頭導航 
-//             pagination={{ clickable: true }}  //頁數 
-//             scrollbar={{ draggable: true }} //滾動條
-//             onSlideChange={() => console.log('slide change')} 
-//             onSwiper={(swiper) => console.log(swiper)} 
-//             className="flex flex-col justify-center w-6/12" 
-//         > 
-//                 {img.map((item)=>(
-//                     <SwiperSlide key={item.url}>
-//                         <img src={item.url} alt={item.url} />
-//                     </SwiperSlide>
-//                 ))}
-//             {/* <SwiperSlide><img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyCq6PGDTHZS7ycv71p-JMFPf-ZoC26kdPw&usqp=CAU'}></img></SwiperSlide> 
-//             <SwiperSlide><img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyCq6PGDTHZS7ycv71p-JMFPf-ZoC26kdPw&usqp=CAU'}></img></SwiperSlide>
-//             <SwiperSlide><img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyCq6PGDTHZS7ycv71p-JMFPf-ZoC26kdPw&usqp=CAU'}></img></SwiperSlide> */}
-//         </Swiper> 
-//     ); 
-// };
-
-// export default Slider;
-
-
 import {Swiper, SwiperSlide} from "swiper/react";
 import { Navigation, Pagination, Scrollbar } from 'swiper';
 import './Slider.css'
@@ -56,8 +13,7 @@ const Slider = () => {
   return (
     <div className="swiper">
       <Swiper className="swiper-item"
-      //   modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
-        modules={[Pagination,Navigation,Scrollbar]}  // 引入module 
+        modules={[Pagination,Navigation,Scrollbar]}  
         spaceBetween={50}
         slidesPerView={1}
         navigation
@@ -65,13 +21,6 @@ const Slider = () => {
         scrollbar={{ draggable: true }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
-      //   effect={"cube"}
-      //   cubeEffect={{
-      //     shadow: true,
-      //     slideShadows: true,
-      //     shadowOffset: 20,
-      //     shadowScale: 0.94,
-      //   }}
       >
         {img.map((slide) => (
           <SwiperSlide key={slide.url}>
